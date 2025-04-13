@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Madhura Vishe</title>
+  <link rel="stylesheet" href="style3.css" />
+  <script src="script3.js" defer></script>
+  <script>
+    // Right click disable
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  
+    // Block Inspect (F12, Ctrl+U, Ctrl+Shift+I)
+    document.onkeydown = function(e) {
+      if (
+        e.ctrlKey && (e.key === 'u' || e.key === 'U') ||  // Ctrl+U
+        e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J') || // Ctrl+Shift+I/J
+        e.key === 'F12'  // F12
+      ) {
+        return false;
+      }
+    };
+  </script>
+  
+</head>
+<body>
+  <div class="background-animation"></div>
+  <header class="logo">🔬 Madhura Vishe</header>
+
+  <section class="section intro">
+    <h1 class="glow-text">✨ My Bioinformatics Projects</h1>
+    <p>Here are some innovative and hands-on projects I’ve built using bioinformatics tools and Python 🧬</p>
+  </section>
+
+  <section class="project-container">
+    <div class="project-card">
+      <h2>🧬 DNA Transcription & Translation</h2>
+      <p>
+        A web-based tool that converts DNA sequences to mRNA and then to proteins using codon mapping. Implemented transcription and translation logic with interactive UI.
+      </p>
+      <span class="tag">#Bioinformatics</span>
+      <span class="tag">#WebTool</span>
+      <span class="tag">#DNA</span>
+    </div>
+
+    <div class="project-card">
+      <h2>📊 Sequence Analysis with BLAST & Clustal</h2>
+      <p>
+        A Python-based project to analyze multiple DNA sequences using NCBI BLAST and ClustalW, followed by visualization using Biopython and Seaborn.
+      </p>
+      <span class="tag">#Python</span>
+      <span class="tag">#BLAST</span>
+      <span class="tag">#Clustal</span>
+    </div>
+
+    <div class="project-card">
+      <h2>📈 Biological Data Analysis</h2>
+      <p>
+        An end-to-end bioinformatics pipeline to clean, process, and analyze large biological datasets. Used pandas, matplotlib, and statistical techniques for insights.
+      </p>
+      <span class="tag">#DataAnalyst</span>
+      <span class="tag">#Biotech</span>
+      <span class="tag">#Analytics</span>
+    </div>
+  </section>
+
+  <section class="section explore">
+    <p>👈 Thank You for Visiting!</p>
+    <a href="thankyou.html" class="start-btn">thankyou</a>
+  </section>
+</body>
+</html>

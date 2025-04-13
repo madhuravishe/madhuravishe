@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Madhura Vishe - Portfolio</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script src="script2.js" defer></script>
+  <script>
+    // Right click disable
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  
+    // Block Inspect (F12, Ctrl+U, Ctrl+Shift+I)
+    document.onkeydown = function(e) {
+      if (
+        e.ctrlKey && (e.key === 'u' || e.key === 'U') ||  // Ctrl+U
+        e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J') || // Ctrl+Shift+I/J
+        e.key === 'F12'  // F12
+      ) {
+        return false;
+      }
+    };
+  </script>
+  
+</head>
+<body>
+  <div class="background-animation"></div>
+  <header class="logo">Madhura Vishe 💫</header>
+
+  <section class="section intro">
+    <h1 class="glow-text">Welcome to My Portfolio</h1>
+    <p>I’m passionate about Biotechnology and Bioinformatics. Here’s a glimpse into who I am and what I do.</p>
+  </section>
+
+  <section class="section two-column">
+    <div class="column">
+      <h2>👤 Personal Information</h2>
+      <ul>
+        <li><strong>Objective:</strong> To contribute in the field of bioinformatics using my knowledge and creativity.</li>
+        <li><strong>Name:</strong> Madhura Vishe</li>
+        <li><strong>Address:</strong> Jay Bhavani Nagar ,Thane, Maharashtra, India</li>
+        <li><strong>School:</strong> Gyanodaya Vidya Mandir</li>
+        <li><strong>College:</strong> Gyanodaya Vidya Mandir</li>
+        <li><strong>University:</strong> Chhatrapati Shivaji Maharaj University</li>
+        <li><strong>Grade:</strong> 8.7 CGPA</li>
+      </ul>
+    </div>
+    <div class="column">
+      <h2>📬 Contact & Socials</h2>
+      <ul>
+        <li><strong>Gmail:</strong> madhuravishe2212@gmail.com</li>
+        <li><strong>Instagram:</strong> @bioverse111</li>
+        <li><strong>LinkedIn:</strong> linkedin.com/in/madhura-vishe</li>
+        <li><strong>Indeed:</strong> indeed.com/madhura-vishe</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section skills">
+    <h2>💼 Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-box">Data Analysis <span class="badge medium">Medium Level</span></div>
+      <div class="skill-box">Microbial Growth Curve Analysis <span class="badge medium">Medium Level</span></div>
+      <div class="skill-box">Aseptic Techniques & Microbial Culture <span class="badge medium">Medium Level</span></div>
+      <div class="skill-box">Sequence Alignment <span class="badge hard">High Level</span></div>
+      <div class="skill-box">Biopython Basics (SeqIO, Align) <span class="badge easy">Easy Level</span></div>
+    </div>
+  </section>
+
+  <section class="section projects">
+    <h2>📁 Projects</h2>
+    <ul>
+      <li>Basic Gene/DNA Analysis Tool (GC%, AT%, Length)</li>
+      <li>DNA Isolation from Onion</li>
+      <li>Biological Data Visualization (Charts from FASTA or CSV)</li>
+      <li>DNA Replication/Complement  Web Tool</li>
+      <li>Effect of Temperature on Microbial Growth</li>
+    </ul>
+  </section>
+
+  <section class="section languages">
+    <h2>🌐 Languages Known</h2>
+    <ul>
+      <li>English (Fluent)</li>
+      <li>Marathi (Native)</li>
+      <li>Marathi (Native)</li>  
+    </ul>
+  </section>
+
+  <section class="section explore">
+    <p>📌 Click below to check out my detailed project showcase.</p>
+    <a href="project.html" class="start-btn">View Projects</a>
+  </section>
+</body>
+</html>

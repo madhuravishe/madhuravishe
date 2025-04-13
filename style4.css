@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+  }
+  
+  .background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #3a3aff, #00ffd5);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 8s ease infinite;
+    z-index: -1;
+  }
+  
+  @keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: #00ffd5;
+    animation: fadeIn 2s ease;
+  }
+  
+  .thankyou-section {
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .glow-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 15px #00ffd5, 0 0 30px #00ffd5;
+    margin-bottom: 15px;
+    animation: fadeInUp 1.5s ease;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  
+  .rating-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #00ffd5;
+    border-radius: 20px;
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.4);
+  }
+  
+  .rating-box h2 {
+    margin-bottom: 15px;
+    color: #00ffd5;
+  }
+  
+  .stars {
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #ccc;
+  }
+  
+  .star:hover,
+  .star.active {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffd700;
+  }
+  
+  .emoji {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+  }
+
+  .back-btn-container {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .back-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: #00ffd5;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #00ffd5;
+  }
+  
+  .back-btn:hover {
+    background: #fff;
+    color: #00ffd5;
+    box-shadow: 0 0 25px #00ffd5, 0 0 50px #00ffd5;
+    transform: scale(1.05);
+  }
+  
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Hide scrollbar */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  

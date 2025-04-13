@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f2027;
+  color: white;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.background-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, #00ffc3 2px, transparent 2px);
+  background-size: 50px 50px;
+  z-index: -1;
+  animation: moveBG 60s linear infinite;
+  opacity: 0.1;
+}
+@keyframes moveBG {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-500px, -500px);
+  }
+}
+.logo {
+  font-size: 2rem;
+  padding: 20px;
+  color: #00ffc3;
+  font-weight: bold;
+  animation: fadeIn 2s ease;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 40px;
+}
+.intro h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.glow-text span {
+  color: #00ffc3;
+  text-shadow: 0 0 10px #00ffc3;
+}
+  .intro p {
+    font-size: 1.5rem;
+    max-width: 700px;
+    margin-top: 10px;
+    line-height: 1.8;
+    color: #e0e0e0;
+  }
+.start-btn {
+  margin-top: 40px;
+  padding: 12px 30px;
+  background: #00ffc3;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.start-btn:hover {
+  background: white;
+  color: #2c5364;
+  transform: scale(1.05);
+}
+.scroll-section {
+  padding: 100px 40px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s ease, transform 1s ease;
+  background-color: rgba(255,255,255,0.02);
+  backdrop-filter: blur(5px);
+}
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ffc3;
+  text-shadow: 0 0 10px #00ffc3;
+}
+
+.scroll-section p, .scroll-section ul li {
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  line-height: 1.7;
+}
+.scroll-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.scroll-section ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

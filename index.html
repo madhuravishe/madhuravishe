@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BioVerse - Biotechnology & Bioinformatics</title>
+  <link rel="stylesheet" href="style1.css" />
+  <script src="script1.js" defer></script>
+  <script>
+    // Right click disable
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  
+    // Block Inspect (F12, Ctrl+U, Ctrl+Shift+I)
+    document.onkeydown = function(e) {
+      if (
+        e.ctrlKey && (e.key === 'u' || e.key === 'U') ||  // Ctrl+U
+        e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J') || // Ctrl+Shift+I/J
+        e.key === 'F12'  // F12
+      ) {
+        return false;
+      }
+    };
+  </script>
+  
+</head>
+<body>
+  <div class="background-animation"></div>
+
+  <header class="logo">MadhuraVishe 🌿</header>
+
+  <section class="intro">
+    <h1 class="glow-text"><span>B</span>iotechnology & <span>B</span>ioinformatics</h1>
+    <p>Where science meets innovation — decoding life through data and biology.</p>
+    <a href="portfolio.html" class="start-btn">Portfolio</a>
+  </section>
+
+  <section class="scroll-section" id="section1">
+    <h2>🔬 Introduction to Biotechnology</h2>
+    <p>Biotechnology is a multidisciplinary field that uses living organisms and biological systems to develop products and technologies for agriculture, healthcare, and the environment.</p>
+  </section>
+
+  <section class="scroll-section">
+    <h2>🧬 What is Bioinformatics?</h2>
+    <p>Bioinformatics involves collecting, analyzing, and interpreting biological data using computational tools. It is essential for gene analysis, drug design, and understanding complex biological systems.</p>
+  </section>
+
+  <section class="scroll-section">
+    <h2>💡 Applications in Real Life</h2>
+    <ul>
+      <li>Genetic Engineering & CRISPR</li>
+      <li>Personalized Medicine</li>
+      <li>Vaccine Development (e.g., mRNA)</li>
+      <li>Big Data in Genomics</li>
+      <li>Bio-based Sustainable Solutions</li>
+    </ul>
+  </section>
+
+  <section class="scroll-section">
+    <h2>🚀 Why Learn This?</h2>
+    <p>Biotech and bioinformatics are the future of medicine, agriculture, and environmental sustainability. It opens doors to research, innovation, and impactful careers.</p>
+  </section>
+
+</body>
+</html>
